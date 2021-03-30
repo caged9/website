@@ -4,6 +4,7 @@
 <head>
     <title>Hercules</title>
     <meta charset="UTF8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <style type="text/css">
     
     html,
@@ -13,69 +14,13 @@
         margin: 0;
         background-size: 100% 100%;
     }  
-
-    body {
-        background: #ececec;
-    }
     
-    img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .content {
-        margin-top: 50px;
-    }
-
-    .product {
-        background: #fff none repeat scroll 0 0;
-        border: 1 px solid #c0c0c0;
-        height: 390px;
-        overflow: hidden;
-        padding: 25px 15px;
-        position: relative;
-        text-align: center;
-        transition: all 0.5s ease 0s;
-        margin-bottom: 20px;
-    }
-
-    .product-hover {
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-    }
-
-    .product-img {
-        height: 200px;
-    }
-
-    .product-title a {
-        color: #000;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-
-    .product-desc {
-        max-height: 60px;
-        overflow: hidden;
-    }
-
-    .product-price {
-        bottom: 15px;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        color: #d51e08;
-        font-size: 18px;
-        font-weight: 500;
-    }
     body {
         margin: 10px auto;
         padding: 30px;
     }
     
-    .page-wrap {
-        min-height: 100%;
-        margin-bottom: -20px;
-    }
+
     
     .page-wrap:after {
         content: "";
@@ -92,49 +37,76 @@
 
 <body>
     <div class="page-wrap">
-        <body bgcolor="#000" background="pic/main-theme.jpg" width="100%" height="100%">
+        <body bgcolor="#F2F2F2" background="pic/catalog.jpg" width="100%" height="100%">
         </body>
-        <header style="text-align: center;">
+        <header style="text-align: center">
         </header>
         <div align="center">
-            <h1 style="color:rgb(31, 6, 170)">Спорт-инвентарь "Hercules" </h1>
+            <h1 style="color:rgb(13, 133, 19)">Спорт-инвентарь "Hercules" </h1>
             <hr style="width: 500px;" />
             <a href="index.html">Главная страница</a> | <a href="catalog.html">Каталог</a>
         </div>
-        <div align="center">
-            <h1 style="margin-bottom: 0">Каталог</h1>
-            <hr style="width: 100px;"/>
-        </div>
     </div> 
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Гантели</a>
-                    <a href="#" class="list-group-item">Штанги</a>
-                    <a href="#" class="list-group-item">Блины и грифы</a>
-                    <a href="#" class="list-group-item">Скамьи и стойки</a>
-                </div>
+
+    <div class="catalog">
+        <div class="product-main">
+            <div class="product">
+                <h2><a href="#">Гантели</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/dumbbells.jpg" alt="" /></a></div>
             </div>
-            <div class="col-md-8">CONTENT</div>
+            <p class="bot-dot"></p>
+        </div>
+        <div class="product-main">
+            <div class="product">
+                <h2><a href="#">Штанги</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/barbells.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Блины и грифы</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/vultures.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Скамьи и стойки</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/racks.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Турники и брусья</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/bars.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Силовые тренажеры</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/simulators.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Шведские стенки</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/walls.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Кроссфит</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/crossfit.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
+        </div><div class="product-main">
+            <div class="product">
+                <h2><a href="#">Туризм и отдых</a></h2>
+                <div class="product-img"><a href="#"><img src="pic/tourism.jpg" alt="" /></a></div>
+            </div>
+            <p class="bot-dot"></p>
         </div>
     </div>
-    <div class="col-md-8 products">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="product">
-                    <div class="product-img">
-                        <a href="#"><img src="pic/ganteli.jpg" alt=""></a>
-                    </div>
-                    <p class="product-title">
-                        <a href="#">Cream jane jeans dress</a>
-                    </p>
-                    <p class="product-desc">Signature NYX cosmetics</p>
-                    <p class="product-price">Price: $20.00</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div align="center">
         <a href="contact.html">Контакты</a>
     </div>
