@@ -10,6 +10,9 @@ a:hover{
 img{
     border:none;
 }
+.clearfix{
+    clear: both;    
+}
 .catalog{
     width:726px; margin: 30px auto;
 }
